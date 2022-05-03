@@ -1,0 +1,29 @@
+create table video_game(id integer primary key, company text, quantity integer, price integer, condition text);
+insert into video_game values (1, "A", 20, 40, "used");
+insert into video_game values (2, "B", 50, 70, "new");
+insert into video_game values (3, "C", 40, 50, "open box");
+insert into video_game values (4, "D", 60, 60, "new");
+insert into video_game values (5, "E", 10, 20, "used");
+insert into video_game values (6, "A", 30, 40, "open box");
+insert into video_game values (7, "B", 5, 15, "used");
+insert into video_game values (8, "C", 100, 50, "new");
+insert into video_game values (9, "D", 30, 30, "open box");
+insert into video_game values (10, "E", 60, 70, "new");
+insert into video_game values (11, "A", 5, 40, "used");
+insert into video_game values (12, "B", 30, 35, "open box");
+insert into video_game values (13, "C", 25, 45, "used");
+insert into video_game values (14, "D", 32, 80, "new");
+insert into video_game values (15, "E", 2, 100, "new");
+
+
+
+create table studios(model text primary key, studio text);
+insert into studios values ("A", "Riot Games");
+insert into studios values ("B", "Activision Blizzard");
+insert into studios values ("C", "EA");
+insert into studios values ("D", "Nintendo");
+insert into studios values ("E", "Valve");
+
+SELECT * from video_game
+order by price asc;
+Select * from studios
