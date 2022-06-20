@@ -1,0 +1,23 @@
+/*Famous Singers & Rappers*/ 
+
+CREATE TABLE artists (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    stage_name TEXT, 
+    country TEXT 
+);
+
+INSERT INTO artists (stage_name, country)   VALUES ("Drake", "Canada");
+INSERT INTO artists (stage_name, country)   VALUES ("Radiohead", "United Kingdom");
+INSERT INTO artists (stage_name, country)   VALUES ("Red Hot Chili Peppers", "United States");
+INSERT INTO artists (stage_name, country)   VALUES ("Kendrick Lamar", "United States");
+INSERT INTO artists (stage_name, country)   VALUES ("Juanes", "Colombia");
+
+CREATE TABLE songs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    artist_id INTEGER,
+    title TEXT,
+    release_year INTEGER, 
+    views NUMERIC
+);
+
+
