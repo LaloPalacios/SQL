@@ -19,5 +19,29 @@ CREATE TABLE songs (
     release_year INTEGER, 
     views NUMERIC
 );
+INSERT INTO songs (artist_id, title, release_year, views) 
+   VALUES (1, "Jimmy Cooks", 2022, 15805604);
+INSERT INTO songs (artist_id, title, release_year, views) 
+   VALUES (1, "Falling Back", 2022, 14177241);
+INSERT INTO songs (artist_id, title, release_year, views) 
+   VALUES (1, "Fair Trade", 2021, 346089441);
+INSERT INTO songs (artist_id, title, release_year, views) 
+   VALUES (2, "High and Dry", 1995, 251338818);
+INSERT INTO songs (artist_id, title, release_year, views) 
+   VALUES (2, "Fake Plastic Trees", 1995, 195266401);
+INSERT INTO songs (artist_id, title, release_year, views) 
+   VALUES (2, "House of Cards", 2007, 53454741);
+INSERT INTO songs (artist_id, title, release_year, views) 
+   VALUES (3, "Californication", 1999, 940372912);
+INSERT INTO songs (artist_id, title, release_year, views) 
+   VALUES (3, "Under the Bridge", 1991, 952398593);
+INSERT INTO songs (artist_id, title, release_year, views) 
+   VALUES (3, "Can't Stop", 2002, 764587025);
+   
+SELECT * FROM artists;
+
+Select stage_name, title
+    FROM artists, songs
+    Where artists.id = songs.artist_id;
 
 
